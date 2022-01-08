@@ -76,10 +76,44 @@
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{ route('admin.category.index') }}">Category</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">SubCategory</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('admin.subcategory.index') }}">SubCategory</a></li>
           </ul>
         </div>
       </li>
+
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+            <i class="mdi mdi-laptop"></i>
+          </span>
+          <span class="menu-title">District</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{{ route('admin.district.index') }}">District</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('admin.subdistrict.index') }}">SubDistrict</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#post" aria-expanded="false" aria-controls="post">
+          <span class="menu-icon">
+            <i class="mdi mdi-security"></i>
+          </span>
+          <span class="menu-title">Posts</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="post">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{{ route('admin.create.post') }}">Add Post </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('admin.all.post') }}"> All Post </a></li>
+
+          </ul>
+        </div>
+      </li>
+
       <li class="nav-item menu-items">
         <a class="nav-link" href="pages/forms/basic_elements.html">
           <span class="menu-icon">
